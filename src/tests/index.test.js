@@ -35,7 +35,7 @@ describe('Home work 1', () => {
         assert.deepEqual(actual, expected);
     });
 
-    it('should return multiply (undefined, undefined)', function() {
+    it('should warning user with zero (undefined, undefined)', function() {
         const firstNum = undefined;
         const secondNum = undefined;
         const expected = 'Please input right data!';
@@ -56,7 +56,7 @@ describe('Home work 1', () => {
     });
     });
 
-// Показать какой четверти принадлежит точка с координатами (x, y)
+// Условные операторы. Показать какой четверти принадлежит точка с координатами (x, y)
     describe('getCoordinatePlane', () => {
         it('should be defined', () => {
             assert.isDefined(getCoordinatePlane);
@@ -162,7 +162,7 @@ describe('Home work 1', () => {
         });
     });
 
-// Найти сумму только положительных чисел
+// Условные операторы. Найти сумму только положительных чисел
     describe('getSumOfNumbers', () => {
         it('should be defined', () => {
             assert.isDefined(getSumOfNumbers);
@@ -234,13 +234,13 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
     });
-// Найти максимальный результат
+// Условные операторы. Найти максимальный результат
     describe('getMaximalResult', () => {
         it('should be defined', () => {
             assert.isDefined(getMaximalResult);
         });
 
-        it('should return \'\' undefined, undefined, undefined', () => {
+        it('should warning user with zero  undefined, undefined, undefined', () => {
             const number1 = undefined;
             const number2 = undefined;
             const number3 = undefined;
@@ -251,7 +251,7 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
 
-        it('should return \'\' null, null, null', () => {
+        it('should warning user with zero null, null, null', () => {
             const number1 = null;
             const number2 = null;
             const number3 = null;
@@ -262,7 +262,7 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
 
-        it('should return \'\' ("", "", "")', () => {
+        it('should warning user with zero ("", "", "")', () => {
             const number1 = "";
             const number2 = "";
             const number3 = "";
@@ -273,7 +273,7 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
 
-        it('should return \'\' (" ", " ", " ")', () => {
+        it('should warning user with zero (" ", " ", " ")', () => {
             const number1 = " ";
             const number2 = " ";
             const number3 = " ";
@@ -284,7 +284,7 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
 
-        it('should return \'\' [], [], []', () => {
+        it('should warning user with zero [], [], []', () => {
             const number1 = [];
             const number2 = [];
             const number3 = [];
@@ -317,7 +317,7 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
     });
-// Показать оценку студента
+// Условные операторы. Показать оценку студента
     describe('getAssessment', () => {
         it('should be defined', () => {
             assert.isDefined(getAssessment);
@@ -428,7 +428,7 @@ describe('Home work 1', () => {
             assert.isDefined(getEvenNumbers);
         });
 
-        it('should return \'\' undefined', () => {
+        it('should warning user with zero undefined', () => {
             const number = undefined;
             const expected = 'Please input a number!'
 
@@ -437,7 +437,7 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
 
-        it('should return \'\' null', () => {
+        it('should warning user with zero null', () => {
             const number = null;
             const expected = 'Please input a number!'
 
@@ -446,7 +446,7 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
 
-        it('should return \'\' ("")', () => {
+        it('should warning user with zero ("")', () => {
             const number = "";
             const expected = 'Please input a number!'
 
@@ -455,7 +455,7 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
 
-        it('should return \'\' (" ")', () => {
+        it('should warning user with zero (" ")', () => {
             const number = " ";
             const expected = 'Please input a number!'
 
@@ -464,7 +464,7 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
 
-        it('should return \'\' []', () => {
+        it('should warning user with zero []', () => {
             const number = [];
             const expected = 'Please input a number!'
 
@@ -482,12 +482,13 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
 });
+// Циклы. Является ли число простым
     describe('getPrimeNumbers', () => {
         it('should be defined', () => {
             assert.isDefined(getPrimeNumbers);
         });
 
-        it('should return \'\' undefined', () => {
+        it('should return warning user with zero undefined', () => {
             const number = undefined;
             const expected = 'Please enter a number!';
 
@@ -496,7 +497,7 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
 
-        it('should return \'\' null', () => {
+        it('should return warning user with zero null', () => {
             const number = null;
             const expected = 'Please enter a number!';
 
@@ -505,7 +506,7 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
 
-        it('should return \'\' ("")', () => {
+        it('should return warning user with zero ("")', () => {
             const number = "";
             const expected = 'Please enter a number!';
 
@@ -514,7 +515,7 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
 
-        it('should return \'\' []', () => {
+        it('should return warning user with zero []', () => {
             const number = [];
             const expected = 'Please enter a number!';
 
@@ -523,7 +524,7 @@ describe('Home work 1', () => {
             assert.deepEqual(actual, expected);
         });
 
-        it('should return \'\' (" ")', () => {
+        it('should return warning user with zero (" ")', () => {
             const number = " ";
             const expected = 'Please enter a number!';
 
@@ -537,132 +538,890 @@ describe('Home work 1', () => {
             const expected = false;
         }); 
     });
+// Циклы. Получить факториал введённого числа
+    describe('getFactorialOfNumbers', () => {
+        it('should be defined', () => {
+            assert.isDefined(getFactorialOfNumbers);
+        });
+
+        it('should warning user with zero (undefined)', () => {
+            const number = undefined;
+            const expected = 'Please input a number!';
+
+            const actual = getFactorialOfNumbers(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with zero (null)', () => {
+            const number = undefined;
+            const expected = 'Please input a number!';
+
+            const actual = getFactorialOfNumbers(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with zero ("")', () => {
+            const number = "";
+            const expected = 'Please input a number!';
+
+            const actual = getFactorialOfNumbers(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with zero (" ")', () => {
+            const number = " ";
+            const expected = 'Please input a number!';
+
+            const actual = getFactorialOfNumbers(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with zero ([])', () => {
+            const number = [];
+            const expected = 'Please input a number!';
+
+            const actual = getFactorialOfNumbers(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return 0', () => {
+            const number = 5;
+            const expected = 120;
+
+            const actual = getFactorialOfNumbers(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return 0', () => {
+            const number = 0;
+            const expected = 1;
+
+            const actual = getFactorialOfNumbers(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+    });
+// Циклы. Получить сумму вводимого числа
+    describe('getSumOfInputNumber', () => {
+        it('should be defined', () => {
+            assert.isDefined(getSumOfInputNumber);
+        });
+
+        it('should warning user with zero (undefined)', () => {
+            const number = undefined;
+            const expected = 'Please input a number!';
+
+            const actual = getSumOfInputNumber(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with zero (null)', () => {
+            const number = null;
+            const expected = 'Please input a number!';
+
+            const actual = getSumOfInputNumber(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with zero ("")', () => {
+            const number = "";
+            const expected = 'Please input a number!';
+
+            const actual = getSumOfInputNumber(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with zero []', () => {
+            const number = [];
+            const expected = 'Please input a number!';
+
+            const actual = getSumOfInputNumber(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return 123', () => {
+            const number = 123;
+            const expected = 6;
+
+            const actual = getSumOfInputNumber(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return 100', () => {
+            const number = 100;
+            const expected = 1;
+
+            const actual = getSumOfInputNumber(number);
+
+            assert.deepEqual(actual, expected)
+        });
+    });
+// Циклы. Получить зеркальное отражение числа
+    describe('getReverseOfNum', () => {
+        it('should be defined', () => {
+            assert.isDefined(getReverseOfNum);
+        });
+
+        it('should warning user with zero (undefined)', () => {
+            const number = undefined;
+            const expected = 'Please input a number!';
+
+            const actual = getReverseOfNum(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with zero (null)', () => {
+            const number = null;
+            const expected = 'Please input a number!';
+
+            const actual = getReverseOfNum(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with zero ("")', () => {
+            const number = "";
+            const expected = 'Please input a number!';
+
+            const actual = getReverseOfNum(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with zero (" ")', () => {
+            const number = " ";
+            const expected = 'Please input a number!';
+
+            const actual = getReverseOfNum(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return Please input a number! ([])', () => {
+            const number = [];
+            const expected = 'Please input a number!';
+
+            const actual = getReverseOfNum(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return 123', () => {
+            const number = 123;
+            const expected = 321;
+
+            const actual = getReverseOfNum(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return 100', () => {
+            const number = 100;
+            const expected = 001;
+
+            const actual = getReverseOfNum(number);
+
+            assert.deepEqual(actual, expected);
+        });
+    });
+
+// Массивы. Найти минимальный элемент массива
+    describe('findMinOfArray', () => {
+        it('should be defined', () => {
+            assert.isDefined(findMinOfArray);
+        });
+
+        it('should warning user with [] (undefined)', () => {
+            const arr = undefined;
+            const expected = 'Please input an array!';
+
+            const actual = findMinOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] ("")', () => {
+            const  arr = "";
+            const expected = 'Please input an array!';
+
+            const actual = findMinOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] 1', () => {
+            const arr = 1;
+            const expected = 'Please input an array!';
+
+            const actual = findMinOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] (" ") ', () => {
+            const arr = " ";
+            const expected = 'Please input an array!';
+
+            const actual = findMinOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return 1', () => {
+            const arr = [1,2,3];
+            const expected = 1;
+
+            const actual = findMinOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return 0', () => {
+            const arr = [0,2,3];
+            const expected = 0;
+
+            const actual = findMinOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+    });
+    
+// Массивы. Найти максимальное значение массива
+    describe('findMaxOfArray', () => {
+        it('should be defined', () => {
+            assert.isDefined(findMaxOfArray);
+        });
+
+        it('should warning user with [] (undefined)', () => {
+            const arr = undefined;
+            const expected = 'Please input an array!';
+
+            const actual = findMaxOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return Please input an array! empty string "" \'\'', () => {
+            const  arr = "";
+            const expected = 'Please input an array!';
+
+            const actual = findMaxOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return Please input an array! 1', () => {
+            const arr = 1;
+            const expected = 'Please input an array!';
+
+            const actual = findMaxOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return Please input an array! (" ") ', () => {
+            const arr = " ";
+            const expected = 'Please input an array!';
+
+            const actual = findMaxOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return 2', () => {
+            const arr = [1,2,3];
+            const expected = 3;
+
+            const actual = findMaxOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return 2', () => {
+            const arr = [5, 0, 2];
+            const expected = 2;
+
+            const actual = getMaxIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+    });
+
+// Массивы. Найти индекс минимальное значение массива
+    describe('getMinIndexOfArray', () => {
+        it('should be defined', () => {
+            assert.isDefined(getMinIndexOfArray);
+        });
+
+        it('should warning user with []  (undefined)', () => {
+            const arr = undefined;
+            const expected = 'Please input an array!';
+
+            const actual = getMinIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] (null)', () => {
+            const arr = null;
+            const expected = 'Please input an array!';
+
+            const actual = getMinIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with []', () => {
+            const arr = [];
+            const expected = 'Please input an array!';
+
+            const actual = getMinIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('warning user with [] \'\' empty string "" ', () => {
+            const  arr = "";
+            const expected = 'Please input an array!';
+
+            const actual = getMinIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] 1', () => {
+            const arr = 1;
+            const expected = 'Please input an array!';
+
+            const actual = getMinIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] (" ") ', () => {
+            const arr = " ";
+            const expected = 'Please input an array!';
+
+            const actual = getMinIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return 0', () => {
+            const arr = [0,1,2];
+            const expected = 0;
+
+            const actual = getMinIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+    });
+
+// Массивы. Найти индекс максимальное значение массива
+    describe('getMaxIndexOfArray', () => {
+        it('should be defined', () => {
+            assert.isDefined(getMaxIndexOfArray);
+        });
+
+        it('should warning user with [] (undefined)', () => {
+            const arr = undefined;
+            const expected = 'Please input an array!';
+
+            const actual = getMaxIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] (null)', () => {
+            const arr = null;
+            const expected = 'Please input an array!';
+
+            const actual = getMinIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with []', () => {
+            const arr = [];
+            const expected = 'Please input an array!';
+
+            const actual = getMinIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] \'\' empty string "" ', () => {
+            const  arr = "";
+            const expected = 'Please input an array!';
+
+            const actual = getMaxIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] 1', () => {
+            const arr = 1;
+            const expected = 'Please input an array!';
+
+            const actual = getMaxIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] (" ") ', () => {
+            const arr = " ";
+            const expected = 'Please input an array!';
+
+            const actual = getMaxIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return 2', () => {
+            const arr = [1,3,5];
+            const expected = 2;
+
+            const actual = getMaxIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+    });
+
+// Массивы. Найти индекс максимальное значение массива
+    describe('getEvenNumSum', () => {
+        it('should be defined', () => {
+            assert.isDefined(getEvenNumSum);
+        });
+
+        it('should warning user with [] (undefined)', () => {
+            const arr = undefined;
+            const expected = 'Please input an array!';
+
+            const actual = getEvenNumSum(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] (null)', () => {
+            const arr = null;
+            const expected = 'Please input an array!';
+
+            const actual = getMinIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with []', () => {
+            const arr = [];
+            const expected = 'Please input an array!';
+
+            const actual = getMinIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+        
+        it('should warning user with [] \'\' empty string "" ', () => {
+            const  arr = "";
+            const expected = 'Please input an array!';
+
+            const actual = getEvenNumSum(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] 1', () => {
+            const arr = 1;
+            const expected = 'Please input an array!';
+
+            const actual = getEvenNumSum(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] (" ") ', () => {
+            const arr = " ";
+            const expected = 'Please input an array!';
+
+            const actual = getEvenNumSum(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return 12', () => {
+            const arr = [1,2,3,4,5,6];
+            const expected = 12;
+
+            const actual = getEvenNumSum(arr);
+
+            assert.deepEqual(actual, expected);
+        });
 
 
+    });
 
+// Массивы. Сделать зеркальное отражение массива
+    describe('getReverseOfArr', () => {
+        it('should be defined', () => {
+            assert.isDefined(getReverseOfArr);
+        });
+
+        it('should warning user with [] (undefined)', () => {
+            const arr = undefined;
+            const expected = 'Please input an array!';
+
+            const actual = getReverseOfArr(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] (null)', () => {
+            const arr = null;
+            const expected = 'Please input an array!';
+
+            const actual = getMinIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with []', () => {
+            const arr = [];
+            const expected = 'Please input an array!';
+
+            const actual = getMinIndexOfArray(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+        
+        it('should warning user with [] empty string "" ', () => {
+            const  arr = "";
+            const expected = 'Please input an array!';
+
+            const actual = getReverseOfArr(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] 1', () => {
+            const arr = 1;
+            const expected = 'Please input an array!';
+
+            const actual = getReverseOfArr(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should warning user with [] (" ") ', () => {
+            const arr = " ";
+            const expected = 'Please input an array!';
+
+            const actual = getReverseOfArr(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return [6,5,4,3,2,1]', () => {
+            const arr = [1,2,3,4,5,6];
+            const expected = [6,5,4,3,2,1];
+
+            const actual = getReverseOfArr(arr);
+
+            assert.deepEqual(actual, expected);
+        });
+    });
+
+// Массивы. Посчитать количество нечётных элементов
+describe('getOddArrSum', () => {
+    it('should be defined', () => {
+        assert.isDefined(getOddArrSum);
+    });
+
+    it('should warning user with [] (undefined)', () => {
+        const arr = undefined;
+        const expected = 'Please input an array!';
+
+        const actual = getOddArrSum(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+
+    it('should warning user with [] (null)', () => {
+        const arr = null;
+        const expected = 'Please input an array!';
+
+        const actual = getMinIndexOfArray(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+
+    it('should warning user with []', () => {
+        const arr = [];
+        const expected = 'Please input an array!';
+
+        const actual = getMinIndexOfArray(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+    
+    it('should warning user with [] empty string "" ', () => {
+        const  arr = "";
+        const expected = 'Please input an array!';
+
+        const actual = getOddArrSum(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+
+    it('should warning user with [] 1', () => {
+        const arr = 1;
+        const expected = 'Please input an array!';
+
+        const actual = getOddArrSum(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+
+    it('should warning user with [] (" ") ', () => {
+        const arr = " ";
+        const expected = 'Please input an array!';
+
+        const actual = getOddArrSum(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+
+    it('should return 3', () => {
+        const arr = [1,2,3,4,5,6];
+        const expected = 3;
+
+        const actual = getOddArrSum(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+});
+
+//Массивы. Поменять местами половины массива
+describe('getReverseOfHalfAnArray', () => {
+    it('should be defined', () => {
+        assert.isDefined(getReverseOfHalfAnArray);
+    });
+
+    it('should warning user with [] (undefined)', () => {
+        const arr = undefined;
+        const expected = 'Please input an array!';
+
+        const actual = getReverseOfHalfAnArray(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+
+    it('should warning user with [] (null)', () => {
+        const arr = null;
+        const expected = 'Please input an array!';
+
+        const actual = getReverseOfHalfAnArray(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+
+    it('should warning user with []', () => {
+        const arr = [];
+        const expected = 'Please input an array!';
+
+        const actual = getReverseOfHalfAnArray(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+    
+    it('should warning user with [] empty string "" ', () => {
+        const  arr = "";
+        const expected = 'Please input an array!';
+
+        const actual = getReverseOfHalfAnArray(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+
+    it('should warning user with [] 1', () => {
+        const arr = 1;
+        const expected = 'Please input an array!';
+
+        const actual = getReverseOfHalfAnArray(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+
+    it('should warning user with [] (" ") ', () => {
+        const arr = " ";
+        const expected = 'Please input an array!';
+
+        const actual = getReverseOfHalfAnArray(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+
+    it('should return [4,5,6,1,2,3]', () => {
+        const arr = [1,2,3,4,5,6];
+        const expected = [4,5,6,1,2,3];
+
+        const actual = getReverseOfHalfAnArray(arr);
+
+        assert.deepEqual(actual, expected);
+    });
+});
 
 // Показать день недели по номеру
-describe('definedWeekDay', () => {
-    it('should be defined', () => {
-        assert.isDefined(definedWeekDay);
-    });
+    describe('definedWeekDay', () => {
+        it('should be defined', () => {
+            assert.isDefined(definedWeekDay);
+        });
 
-    it('should return \'\' (0)', () => {
-        const number = 0;
-        const expected = 'Input right data';
+        it('should return \'\' (0)', () => {
+            const number = 0;
+            const expected = 'Input right data';
 
-        const actual = definedWeekDay(number);
+            const actual = definedWeekDay(number);
 
-        assert.deepEqual(actual, expected);
-    });
+            assert.deepEqual(actual, expected);
+        });
 
-    it('should return \'\' (undefined)', () => {
-        const number = undefined;
-        const expected = 'Input right data';
+        it('should return Input right data (undefined)' , () => {
+            const number = undefined;
+            const expected = 'Input right data';
 
-        const actual = definedWeekDay(number);
+            const actual = definedWeekDay(number);
 
-        assert.deepEqual(actual, expected);
-    });
+            assert.deepEqual(actual, expected);
+        });
 
-    it('should return Monday (1)', () => {
-        const number = 1;
-        const expected = 'Monday';
+        it('should return Please input an array! (null)', () => {
+            const arr = null;
+            const expected = 'Please input an array!';
 
-        const actual = definedWeekDay(number);
+            const actual = getMinIndexOfArray(arr);
 
-        assert.deepEqual(actual, expected);
-    });
+            assert.deepEqual(actual, expected);
+        });
 
-    it('should return Tuesday (2)', () => {
-        const number = 2;
-        const expected = 'Tuesday';
+        it('should return Please input an array! []', () => {
+            const arr = [];
+            const expected = 'Please input an array!';
 
-        const actual = definedWeekDay(number);
+            const actual = getMinIndexOfArray(arr);
 
-        assert.deepEqual(actual, expected);
-    });
+            assert.deepEqual(actual, expected);
+        });
+        
+        it('should return Monday (1)', () => {
+            const number = 1;
+            const expected = 'Monday';
 
-    it('should return Wednesday (3)', () => {
-        const number = 3;
-        const expected = 'Wednesday';
+            const actual = definedWeekDay(number);
 
-        const actual = definedWeekDay(number);
+            assert.deepEqual(actual, expected);
+        });
 
-        assert.deepEqual(actual, expected);
-    });
+        it('should return Tuesday (2)', () => {
+            const number = 2;
+            const expected = 'Tuesday';
 
-    it('should return Thursday (4)', () => {
-        const number = 4;
-        const expected = 'Thursday';
+            const actual = definedWeekDay(number);
 
-        const actual = definedWeekDay(number);
+            assert.deepEqual(actual, expected);
+        });
 
-        assert.deepEqual(actual, expected);
-    });
+        it('should return Wednesday (3)', () => {
+            const number = 3;
+            const expected = 'Wednesday';
 
-    it('should return Friday (5)', () => {
-        const number = 5;
-        const expected = 'Friday';
+            const actual = definedWeekDay(number);
 
-        const actual = definedWeekDay(number);
+            assert.deepEqual(actual, expected);
+        });
 
-        assert.deepEqual(actual, expected);
-    });
+        it('should return Thursday (4)', () => {
+            const number = 4;
+            const expected = 'Thursday';
 
-    it('should return Saturday (6)', () => {
-        const number = 6;
-        const expected = 'Saturday';
+            const actual = definedWeekDay(number);
 
-        const actual = definedWeekDay(number);
+            assert.deepEqual(actual, expected);
+        });
 
-        assert.deepEqual(actual, expected);
-    });
+        it('should return Friday (5)', () => {
+            const number = 5;
+            const expected = 'Friday';
 
-    it('should return Sunday (7)', () => {
-        const number = 7;
-        const expected = 'Sunday';
+            const actual = definedWeekDay(number);
 
-        const actual = definedWeekDay(number);
+            assert.deepEqual(actual, expected);
+        });
 
-        assert.deepEqual(actual, expected);
-    });
+        it('should return Saturday (6)', () => {
+            const number = 6;
+            const expected = 'Saturday';
 
-    it('should return input right data (1-7)', () => {
-        const number = -1;
-        const expected = 'Input right data';
+            const actual = definedWeekDay(number);
 
-        const actual = definedWeekDay(number);
+            assert.deepEqual(actual, expected);
+        });
 
-        assert.deepEqual(actual, expected);
-    });
+        it('should return Sunday (7)', () => {
+            const number = 7;
+            const expected = 'Sunday';
 
-    it('should return input right data (1-7)', () => {
-        const number = ' ';
-        const expected = 'Input right data';
+            const actual = definedWeekDay(number);
 
-        const actual = definedWeekDay(number);
+            assert.deepEqual(actual, expected);
+        });
 
-        assert.deepEqual(actual, expected);
-    });
+        it('should return input right data (1-7)', () => {
+            const number = -1;
+            const expected = 'Input right data';
 
-    it('should return input right data (1-7)', () => {
-        const number = [];
-        const expected = 'Input right data';
+            const actual = definedWeekDay(number);
 
-        const actual = definedWeekDay(number);
+            assert.deepEqual(actual, expected);
+        });
 
-        assert.deepEqual(actual, expected);
-    });
+        it('should return input right data (1-7)', () => {
+            const number = ' ';
+            const expected = 'Input right data';
 
-    it('should return input right data (1-7)', () => {
-        const number = [1,2];
-        const expected = 'Input right data';
+            const actual = definedWeekDay(number);
 
-        const actual = definedWeekDay(number);
+            assert.deepEqual(actual, expected);
+        });
 
-        assert.deepEqual(actual, expected);
-    });
+        it('should return input right data (1-7)', () => {
+            const number = [];
+            const expected = 'Input right data';
+
+            const actual = definedWeekDay(number);
+
+            assert.deepEqual(actual, expected);
+        });
+
+        it('should return input right data (1-7)', () => {
+            const number = [1,2];
+            const expected = 'Input right data';
+
+            const actual = definedWeekDay(number);
+
+            assert.deepEqual(actual, expected);
+        });
 
     });
 });
